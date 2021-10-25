@@ -1,6 +1,6 @@
-# Mini example of Flask and Pytest
+# Mini example of Flask and Flask-RESTX
 
-![Actions Workflow](https://github.com/po5i/flask-mini-tests/workflows/Flask/badge.svg)
+![Actions Workflow](https://github.com/po5i/flask-mini-rest/workflows/Flask/badge.svg)
 
 This is a examle repository for [my article](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a).
 
@@ -16,7 +16,7 @@ source venv/bin/activate
 Run the server
 
 ```bash
-python app.py
+FLASK_ENV=development flask run
 ```
 
 Run the tests
@@ -25,7 +25,8 @@ Run the tests
 python -m pytest
 ```
 
-The server will be up on [http://localhost:5000](http://localhost:5000).
+The server will be up on [http://localhost:5000](http://localhost:5000)
+and the API landing page will be available on [http://127.0.0.1:5000/api/v1/](http://127.0.0.1:5000/api/v1/).
 
 ## Requirements
 
