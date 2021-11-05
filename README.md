@@ -19,6 +19,12 @@ Run the server
 FLASK_ENV=development flask run
 ```
 
+Check out the Swagger documentation and playground at
+
+```
+http://localhost:5000/api/v1/
+```
+
 Run the tests
 
 ```bash

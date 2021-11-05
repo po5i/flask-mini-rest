@@ -8,6 +8,9 @@ app.register_blueprint(blueprint)
 
 @app.route("/")
 def index():
+    """
+    Index page
+    """
     return "This is my awesome landing page 🤞"
 
 
