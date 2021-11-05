@@ -85,7 +85,7 @@ class ItemsApi(Resource):
         """
         return memory_object
 
-    @api.response(HTTPStatus.NO_CONTENT.value, "Object added")
+    @api.response(HTTPStatus.OK.value, "Object added")
     @api.expect(item_parser)
     def post(self) -> None:
         """
