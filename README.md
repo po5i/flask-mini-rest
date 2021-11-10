@@ -2,7 +2,7 @@
 
 ![Actions Workflow](https://github.com/po5i/flask-mini-rest/workflows/Flask/badge.svg)
 
-This is a examle repository for [my article](https://dev.to/po5i/how-to-add-basic-unit-test-to-a-python-flask-app-using-pytest-1m7a).
+This is a examle repository for [my article](https://dev.to/po5i/how-to-set-up-a-rest-api-in-flask-in-5-steps-5b7d).
 
 ## Setup
 
@@ -36,7 +36,7 @@ and the API landing page will be available on [http://127.0.0.1:5000/api/v1/](ht
 
 ## Requirements
 
-Python >= 3.6
+Python >= 3.9
 
 ## License
 
