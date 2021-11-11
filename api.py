@@ -77,7 +77,7 @@ class ItemsApi(Resource):
     API for handling the Item list resource
     """
 
-    @api.response(HTTPStatus.OK.value, "Get the item list")
+    @api.response(HTTPStatus.OK.value, "Get the item list", [item_model])
     @api.marshal_list_with(item_model)
     def get(self) -> list[Item]:
         """
@@ -101,7 +101,7 @@ class ItemApi(Resource):
     API for handling the single Item resource
     """
 
-    @api.response(HTTPStatus.OK.value, "Get the item list")
+    @api.response(HTTPStatus.OK.value, "Get the item list", item_model)
     @api.response(HTTPStatus.BAD_REQUEST.value, "Item not found")
     @api.marshal_with(item_model)
     def get(self, item_id: int) -> Item:
